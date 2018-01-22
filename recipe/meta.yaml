@@ -10,8 +10,8 @@ package:
 source:
   fn: gtools_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/gtools_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/gtools/gtools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/gtools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/gtools/gtools_{{ version }}.tar.gz
   sha256: 86b6a51a92ddb3c78095e0c5dc20414c67f6e28f915bf0ee11406adad3e476f6
 
 
