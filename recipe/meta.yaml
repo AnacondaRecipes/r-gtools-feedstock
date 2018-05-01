@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/gtools/gtools_{{ version }}.tar.gz
   sha256: 86b6a51a92ddb3c78095e0c5dc20414c67f6e28f915bf0ee11406adad3e476f6
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
